@@ -1,0 +1,24 @@
+{
+  "name": "百度过滤搜索结果",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Filter Baidu search results.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://www.baidu.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/s*"],
+      "js": ["content.js"]
+    }
+  ]
+}

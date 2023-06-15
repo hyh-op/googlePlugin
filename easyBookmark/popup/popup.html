@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>简易书签管理器</title>
+    <link rel="stylesheet" href="../popup.css">
+</head>
+<body>
+    <h2>简易书签管理器</h2>
+    <form>
+      <input type="text" id="url" placeholder="请输入书签URL" required>
+      <input type="text" id="name" placeholder="请输入书签名称" required>
+      <br>
+      <button type="submit" id="add">添加</button>
+    </form>
+    <ul id="list"></ul>
+    <div style="border-bottom:1px solid #CCC"></div> 
+    <h2>高亮显示</h2>
+    <input type="text" id="keywords" />
+    <button id="highlightBtn" style="margin-bottom: 16px;">Highlight</button>
+    <script src="../popup.js"></script>
+</body>
+</html>
